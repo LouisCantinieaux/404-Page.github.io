@@ -20,13 +20,12 @@ body {
 
 #linkGit {
   text-align: left;
-  background-position: left;
   margin-top: 15%;
+  width: auto;
 }
 
 a {
   color: white;
-
 }
 
 a.bouton {
@@ -38,10 +37,74 @@ a.bouton {
 
 }
 
+a:hover {
+  text-decoration: none;
+  transition-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+
+}
+
 a:link {
   text-decoration: none;
   color: white;
   border: 2px solid black;
-  background-color: #391272;
+  background-image: linear-gradient(#26B0B0, #120B6F);
   border-radius: 15px;
+  padding: 5px;
+  transition-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+
+}
+
+/*Animation BounceOutUp*/
+@-webkit-keyframes .bounceOutUp {
+
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+}
+
+@keyframes .bounceOutUp {
+
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+}
+
+.bounceOutUp {
+  -webkit-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
+  transition-duration: 3s;
 }
