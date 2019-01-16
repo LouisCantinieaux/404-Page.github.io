@@ -1,0 +1,47 @@
+body {
+  background-image: url("../image/explosion-spatiale.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+#notFound {
+  text-align: center;
+  color: #DA8B16;
+  margin-top: 20%;
+}
+
+#messageError {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #DA8B16;
+}
+
+#linkGit {
+  text-align: left;
+  background-position: left;
+  margin-top: 15%;
+}
+
+a {
+  color: white;
+
+}
+
+a.bouton {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: white;
+
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  background-color: #391272;
+  border-radius: 15px;
+}
