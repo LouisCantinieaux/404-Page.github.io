@@ -1,0 +1,109 @@
+body {
+  background-image: url("../image/explosion-spatiale.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+#notFound {
+  text-align: center;
+  color: #DA8B16;
+  margin-top: 20%;
+}
+
+#messageError {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #DA8B16;
+}
+
+#linkGit {
+  text-align: left;
+  margin-top: 15%;
+  width: auto;
+}
+
+a {
+  color: white;
+}
+
+a.bouton {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  /*animation-iteration-count: 1;
+  animation-direction: alternate;*/
+  transition-duration: 300ms;
+  opacity: 1;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  background-image: linear-gradient(#26B0B0, #120B6F);
+  border-radius: 15px;
+  padding: 5px;
+  transition-delay: 0s;
+  transition-duration: 3s;
+  opacity: 0;
+}
+
+/*Animation BounceOutUp*/
+@-webkit-keyframes .bounceOutUp {
+
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+}
+
+@keyframes .bounceOutUp {
+
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+}
+
+.bounceOutUp {
+  -webkit-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
+  transition-duration: 3s;
+}
